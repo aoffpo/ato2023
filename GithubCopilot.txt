@@ -1,0 +1,74 @@
+Cloud based generative ai tool
+
+AI pair programmer  (but doesn't understand the nuances of the codebase or context)
+
+Pair with CoPilot Chat (in beta) for best experience
+    Release - Nov 8/9
+
+commment driven code generative
+automatic test generation
+Sql generation (queries, tables, indices, stored procedures)
+regex
+Pattern/mappings generation
+Documentation
+Explain code
+Fix code
+Reviewing code
+Translate codee
+generate K8s manifext
+"What does the API do?"
+
+https://github.com/orgs/community/discussions/49422
+
+
+Challenges:
+    Should always have human oversight and Reviewing
+    only as good as context/prompt
+    Learn to do prompt engineering to get best results from it
+    Learning curve
+    sometimes needs nudging
+    Hallucinations - generating things (variables, dependencies) that don't exist
+    Date problem
+        only as up to date as model was trained on.
+            ex. "what is the version of K8.  Answer 1.22 . Actual 1.28
+            Chat may have different training date than CoPilot
+    Length of response - may not be enough data ex: Zip to state, stops at Ohio
+    Always generative, not deterministic
+
+
+....
+Corrections matches public code?
+    may cause license infringement...leave it off.
+    in beta: will tell you what the licenses of public code
+
+Github copilot - integration into VS Code 
+GitHub Copilot Chat extension 
+Voice - interact by speaking
+Labs - experimental features
+
+Copilot AI  - MS 365 apps 
+
+How does Copilot work:
+    trained on public code
+        created LLM 
+    gather context  
+        filename, open files
+            files with desired style, related files, functionality to help prompt
+
+Copilot X
+    Chat    
+    cli 
+    for PRs 
+        summary
+        walthrough
+        poem 
+        resolve issues
+
+Explain
+simplify
+generate 
+fix 
+test
+translate the select code into Go
+review selected code
+# q: what are the prime numbers 

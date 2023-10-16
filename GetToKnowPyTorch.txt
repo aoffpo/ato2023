@@ -1,0 +1,50 @@
+Deep Learning
+    neural network with mutliple layers from large amount of data
+    content/code gen; summeraization, speech to text ,chatbox, image recognition
+
+Tensor
+    multi dimensional array for numeric computation
+    primary data type in pytorch
+
+Model parameters
+    weights and biases that are optimized during training
+
+Forward Pass
+    run the input data through model to make prediction of output
+
+Backward Pass   
+    traverse backwards through input data
+
+
+pytorch 
+    framework for  Model    
+    building blocks t obuild and train neural network
+        takes care of complexities
+
+    computation support for cpu, gpu and distributed training 
+
+    domain specific libraries
+        torchvision, torchaudio, torchtext, pytorch mobel (beta)
+
+    torchbench for benchmarking models
+
+--
+    Data prep
+    torch.nn module
+    models inherit from nn.model 
+
+    training loop can be just a few steps
+    backwards propagation
+        gradiant calculation with autograd
+            calculates weights and biases
+        model optimization
+    python frontend
+
+    Distributed training    
+        DistributedDataParallel
+            replicates models across cpus 
+        Fully Shared Data Parallel (FSCP)
+            extends DDP by sharding model parameters, grandient and optimizer states
+
+
+github.com/pytorch

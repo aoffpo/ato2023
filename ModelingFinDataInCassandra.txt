@@ -1,0 +1,50 @@
+Real time:
+    online transaction processing
+    immediate decision making
+    timely reporting
+    fraud prevention
+
+
+Batch
+    cost effectiveness
+    regulatory compliance
+    bulk processing
+
+Data modeling strategies
+    understand your queries
+        to create partition keys and tables correctly
+    Data partitioning
+        partition data by states so you don't have to scan the entire country
+        secondary indexes if low cardinality
+    Denormalization
+        ensure duplication across multiple nodes
+        balance between denormalization and data consistency
+            sophisticated update process to keep data in sync
+    time series data modeling
+        most use cases ask for data in given time frame (monthly statement)
+    Consistency levels
+    Materialized views
+        aggregate, transform and filter to access data
+            ex: spend on a given day
+
+Cassandra Usage in Loyalty (customer points/rewards program)
+    Any customer that logs into platform gets data from Cassandra
+    transactions table 
+        sourced from raw tables 
+    Real time use cases
+        whenever you need a response as soon as possible, pick partition key close to query 
+        start from use case - define partition key - then data 
+    Batch
+        requires aggregated data
+        data in sync
+        aggregate by account number and transaction date because we will are working with data ranges PRIMARY KEY ((account_number), transaction_date)
+
+    Real time and batch at same time    
+        partition for each use case from raw source data 
+        
+
+
+
+
+
+        

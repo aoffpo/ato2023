@@ -1,0 +1,29 @@
+GraphQL orchestrator problem:
+    reduce number of calls
+    client calls orchestrator
+        orchestrator makes service calls and aggregates result
+
+
+(VIDEO  on intuit developer youtube channel)
+
+https://github.com/graph-quilt
+https://github.com/graph-quilt#:~:text=GraphQL%20Conference%20presentation
+
+Manage subgraphs and merge them together
+Dependencies between subgraphs  
+    resolver to extend types
+        remote function call to resolve types and create unified schema
+
+Apollo Federation
+    specification for stitching microservices into unified schemas
+
+
+GraphQL Authorization
+    GraphQL.Authorization.java
+    https://github.com/graph-quilt/graphql-authorization-java
+    register with graphql gateway
+
+REST adapter
+    orchestrator projects data from a REST service to match graphql schemas
+    REST registration files
+        schema, configuration, specification

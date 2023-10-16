@@ -1,0 +1,13 @@
+Building APIs you users will hate
+
+API antipatterns
+
+1. Secret endpoints
+2. Schema changes on same version
+3. Push changes whenever you feel like it
+    Use semantic versioning and publish roadmap and release schedule
+4. Developers call your API again and you break it like a promise
+    communicate breaking changes and ensure old versions are available while new versions are released
+5. Inconsistent naming
+6. Rate limitations that aren't transparent
+7. Use meaningful status codes.
