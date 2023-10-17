@@ -1,0 +1,1 @@
+https://instaclustr.com/blog/spinning-your-drones-with-cadence-and-apache-kafka-architecture-order-and-delivery-workflows-part-4/
