@@ -1,1 +1,3 @@
 https://instaclustr.com/blog/spinning-your-drones-with-cadence-and-apache-kafka-architecture-order-and-delivery-workflows-part-4/
+
+https://www.instaclustr.com/blog/machine-learning-over-streaming-kafka-data-part-5-incremental-tensorflow-training-with-kafka-data/
