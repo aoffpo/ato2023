@@ -1,0 +1,25 @@
+Config driven development
+
+configuration metadata portal
+    reusable artifacts
+    metadata reports
+    tool agnostic modular design solution
+    no/low code
+
+
+CDD process flow
+    independent components are built first
+    interface (config) defined to conpose ui/ux layer
+    combination of reusable components
+    any changes are new logic configured through config table
+
+components  
+    metadat reports
+    config data model with UI/UX layer
+    business data inegration pipeline component
+    data movement controls  pipeline component
+    test validation  pipeline component
+    batch log report  pipeline component
+    DQ@Motion  pipeline component
+    data ingestion pipeline component
+    

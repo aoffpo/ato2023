@@ -1,0 +1,101 @@
+React supports multiple renderers
+    but done in DOM 
+nextjs leveraged render to string 
+    isomorphic react 
+        render on the server 
+    prerender at build time 
+
+File system routing
+
+CSR (client side rendering)
+    useEffect
+    most common way to render react 
+    everything done in the browser
+    the default export is the page that is rendered on the URL
+
+    pros    
+        dynamic content
+        fast response
+    cons  
+        poor seo and UI cache (no content to render)
+        slow render times
+    use for
+        interactive dashboards
+        3rd party widgets
+
+        deffered ui
+        shipment tracking
+        3rd party checkoput
+
+SSR (server side rendering)
+    dynamic rendering
+    HTML is generated on server for every request
+    export const getServerSideProps {} 
+        getEffect moved to this function
+    pros
+        dynamic content
+        fast render
+        seo friendly
+    cons 
+        slow for reponse times
+    use for 
+        dynamic product listing pages
+        search results pages 
+        checkout pages 
+
+        shooping cart 
+        order history 
+        search results
+
+SSG (static-site generation)
+    jeckl/gatsby
+    HTML pre-rendered at build time (in CI)
+    export const getStaticPaths 
+    return paths, fallback
+        list of paths by id
+        fallback : try to render by making request to api and show loading
+            render less popular list items on the fly 
+    pros:
+        seo friendly
+        highly cacheable
+    cons 
+        slow build times
+        dynamic content (user-specific)
+    use for 
+        marketing pages
+        blog posts
+        static product listing & pages\
+
+        blog 
+        login
+        onboarding
+
+ISR (Incremental static regeneration)
+    regererated on server after cache timeout
+    getStaticProps
+    return props, revalidate: n // n seconds 
+    change content after a certain amount of time without triggering a rebuild
+    fallback: 'blocking'  - make it act like a server side request but content can be cached
+        "dynamic at the speed of static"
+    pro
+        seo-friendly
+        fast initial load times
+        allows for frequent page updates
+    cons    
+        slow build times
+        dynamic, user-specific content 
+    use for
+        headless CMS pages https://contentful.com/headless-cms/
+        periodically-updating product listing and pages
+
+        product details 
+        CMS driven pages
+
+Server components   
+    rendering react server components in next
+    page router
+    app router 
+    automatically chooses rendering strategy for you
+
+
+    benmvp.com//ato-nextjs
