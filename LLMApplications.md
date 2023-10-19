@@ -63,8 +63,8 @@ Frameworks
     * output based on latest data
 * Tradeoffs:
   * to make it relevant to your domain
-  * DST: pE, RAG, FT, DSLLM
-  * Cost: DSLLM highest, fT, Tag, prompt eng.
+  * DST: pE, RAG, FT, DS LLM
+  * Cost: DS LLM highest, fT, Tag, prompt eng.
   * Transparency
     * RAD highest, everything else the same
   * hallucination avoidance
@@ -99,14 +99,15 @@ Still needs humans to review and adjust prior to release
 ## Emerging end to end architecture
 
 * central part is orchestration
-    * llama, langchain
+  * llama, langchain
 * language model and caching in cloud
 * prompt Engineering
-    * various techniques
+  * various techniques
 
 ![End to End Architecture](endtoendarch.jpg)
 
 ## Capability stack
+
 ![Capability stack](capabilitystack.jpg)
 
 ## Takeaways
